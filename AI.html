@@ -1,0 +1,222 @@
+<!DOCTYPE HTML>
+<!--
+	Landed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>AI</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<header id="header">
+				<h1 id="logo"><a href="index.html">Hello, There! </a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li>
+							<a href="index.html#all-categories">Projects</a>
+							<ul>
+								<li><a href="AI.html">AI & Machine Learning</a></li>
+								<li><a href="data-processing.html">Data Processing & Analysis</a></li>
+								
+							</ul>
+							</li>
+							
+							<li><a href="about-me.html">About Me</a></li>
+							<li><a href="about-me.html#contact-me">Contact Me</a></li>
+							<!-- <li><a href="#" class="button primary">Sign Up</a></li> -->
+							</ul>
+				</nav>
+			</header>
+
+			<!-- Main -->
+				<div id="main" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<h2>AI & Machine Learning</h2>
+							<p>These are a few of the machine learning and deep learning projects I have developed for the company where I currently work.</p>
+						</header>
+						<div class="row gtr-150">
+							<div class="col-8 col-12-medium">
+
+								<!-- Content -->
+									<section id="content">
+										<div id="haircolor-simulation">
+											<a href="AI.html#haircolor-simulation"> 
+		
+												<video width="100%" max-height="100%" loop="true" autoplay="autoplay" controls muted>
+													<source src="videos/hair_color_simulation/color_simulation_1color.mp4" type="video/mp4">
+													Your browser does not support the video tag.
+												</video>
+					
+											</a>
+										<h3>Realtime Haircolor Simulation</h3>
+										<p>This is a deep learning based project for realtime hair color simulation. The color can be simulated on any length of
+											hair dynamically. Users can tryout different colors in their hair before purchasing a hair color product. Moreover,
+											they
+											can add multiple colors together to view ombre/ gradient color in their hair.</p>
+										<p>The U-Net model along with the MobileNetV3 transfer learning model and custom layers had been used to achieve an
+											exact segmentation of hair in images. The model was trained on a dataset of 26,918 images and the Dice coefficient
+											was used as the loss function. HSL coloring formula with customized pipelines was implemented to achieve proper
+											light and color by considering environmental brightness. It can detect both long hair and short hair for coloring.
+											The system allows users to add multiple colors to hair, including color gradients. </p>
+										<p>My contribution to the project was processing the dataset, data augmentation , making the hair color look natural by
+											modifying the coloring formula algorithm, develop short hair and long hair detection algorithm and divide hair area
+											for 2 color mixing with gradient effect.
+										</p>
+										
+
+										</div>
+										<p></p>
+										<div id="timeseries-forecasting">
+											<a href="AI.html#timeseries-forecasting"> 
+										
+												<video width="100%" max-height="100%" loop="true" autoplay="autoplay" controls muted>
+													<source src="videos/product_demand/demand_prediction.mp4" type="video/mp4">
+													Your browser does not support the video tag.
+												</video>
+										
+											</a>
+											<h3>Time Series Forecasting</h3>
+											<p>This is a product sale forecasting API to predict the sales of thousands of products. After trying out various
+												machine learning and deep learning models, such as -ARIMA, XGBoost, TFT, N-Beats etc. , FBProphet model
+												generally
+												provided the best outcome for thousands of products. FBProphet seemed more convenient combined with the holiday
+												effect. </p>
+											<p>My contribution is , I had tried out different models and compare the forecasting results to the actual sales
+												report. I have also
+												developed a custom greedy-based algorithm
+												for predicting product demand. Though it seemed good at first but it could not detect the sudden spikes. The
+												FBProphet model
+												generally provided the best outcome for
+												thousands of products. FBProphet seemed
+												more convenient combined with the holiday
+												effect.</p>
+										
+										</div>
+										<!-- <div id="sample">
+											<a href=""> Sample
+		
+												<video width="100%" max-height="100%" loop="true" autoplay="autoplay" controls muted>
+													<source src="videos/" type="video/mp4">
+													Your browser does not support the video tag.
+												</video>
+					
+											</a>
+										<h3>Title</h3>
+										<p>Details</p>
+											
+										</div> -->
+										<p></p>
+										<div id="product-search">
+											<a href=""> 
+										
+												<video width="100%" max-height="100%" loop="true" autoplay="autoplay" controls muted>
+													<source src="videos/product_search/Product Search by Image _ Text _ Barcode_edited.mp4" type="video/mp4">
+													Your browser does not support the video tag.
+												</video>
+										
+											</a>
+											<h3>Reverse Image Search</h3>
+											<p>This is a product search API for reverse image based search. Used deep learning models for image feature
+												selection, such as Resnet50, Xception, DenseNet121, and VGG19. The API can also do text label based search where
+												KerasOCR had been used. There is also a barcode scanning feature to capture the image barcode. Several custom
+												modifications with background removal techniques were done before the detection of the barcode. </p>
+											<p>My contribution to the project was mainly on data processing part, i worked on background removal of images to
+												imrpove the accuracy of product detection. Also, i have implemented the textLabeled based search with KerasOCR.
+											</p>
+										</div>
+										<p></p>
+
+										<div id="hairstyle-generator">
+											<a href="AI.html#hairstyle-generator" class="image fit">
+												<img src="images/hairstyle-generator/hairstyle-generator.png" alt="" />
+											</a>
+											<h3>Hairstyle Generator</h3>
+											<p>This is a project for simulating various popular hairstyle on someone's hair. Used StyleGAN model for this. Tried
+												multiple techniques to generate hairstyle. "Style Your Hair" technique seems the best fit till now. This can
+												generate hairstyle even with different pose and angles. Work is still going on this project. </p>
+											<p>My contribution is trying out Barbershop technique on various sample images for hair style generation and time
+												optimization. </p>
+										</div>
+									</section>
+
+							</div>
+							<div class="col-4 col-12-medium">
+								
+
+								<!-- Sidebar -->
+									<section id="sidebar">
+										<section>
+											
+												<a href="data-processing.html#location-formatter" class="image fit"> 
+													<img src="images/location-formatter/location-formatter.png" alt="" />
+												</a>
+											
+											<h3>Location Name Formatter</h3>
+											<footer>
+												<ul class="actions">
+													<li><a href="data-processing.html#location-formatter" class="button">Learn More</a></li>
+												</ul>
+											</footer>
+										</section>
+										<hr />
+										<section>
+											<a href="data-processing.html#fraud-detection-provider" class="image fit">
+												<img src="images/fraud-detection/fraud-detection.png" alt="" />
+											</a>
+											<h3>Fraud Detection</h3>
+											<footer>
+												<ul class="actions">
+													<li><a href="data-processing.html#fraud-detection-provider" class="button">Learn More</a></li>
+												</ul>
+											</footer>
+										</section>
+									</section>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<!-- <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li> -->
+						<li><a href="https://www.facebook.com/fabliha.fairooz/" class="icon brands alt fa-facebook-f"><span
+									class="label">Facebook</span></a></li>
+						<li><a href="https://www.linkedin.com/in/fabliha-fairooz-a60439a0/" class="icon brands alt fa-linkedin-in"><span
+									class="label">LinkedIn</span></a></li>
+						<!-- <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li> -->
+						<li><a href="https://github.com/Fabliha-Bd" class="icon brands alt fa-github"><span
+									class="label">GitHub</span></a></li>
+						<!-- <li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li> -->
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Fabliha Fairooz. All rights reserved.</li>
+						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
